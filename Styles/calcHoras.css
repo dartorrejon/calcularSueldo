@@ -1,0 +1,7 @@
+.extra{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    line-height: 3;
+}

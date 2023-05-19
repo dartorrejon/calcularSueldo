@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/calendar.css">
+    <title>Calendario</title>
+</head>
+
+<body>
+    <div>
+       <h2></h2>
+        <ul>
+            <li class="day-name">Dom</li>
+            <li class="day-name">Lun</li>
+            <li class="day-name">Mar</li>
+            <li class="day-name">Mie</li>
+            <li class="day-name">Jue</li>
+            <li class="day-name">Vie</li>
+            <li class="day-name">Sab</li>
+        </ul>
+        <ol id="calendar">
+
+        </ol>
+    </div>
+
+    <form id="cambiar" action="#">
+        <button id="año-atras"><< A </button>
+        <button id="mes-atras"><< M</button>
+        <input id="fechita" type="date" class="hide-calendar-icon">
+        <button id="hoy">Hoy</button>
+        <button id="mes-adelante">>> M</button>
+        <button id="año-adelante">>> A</button>
+    </form>
+    <script src="Scripts/date.js"></script>
+    
+   
+</body>
+
+</html>

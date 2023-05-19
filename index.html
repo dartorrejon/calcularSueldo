@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="Styles/calendar.css">
+    <link rel="stylesheet" href="Styles/calcHoras.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <h1>Inicio</h1>
+            <ol>
+                <il><a href=""> Calcular Sueldo</a></il>
+                <il><a href=""> Claves</a></il>
+                <il><a href=""> Objetivos</a></il>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section class="container calendario-cont">
+
+            <h2 class="cal-titulo"></h2>
+            <ul>
+                <li class="day-name">Dom</li>
+                <li class="day-name">Lun</li>
+                <li class="day-name">Mar</li>
+                <li class="day-name">Mie</li>
+                <li class="day-name">Jue</li>
+                <li class="day-name">Vie</li>
+                <li class="day-name">Sab</li>
+            </ul>
+            <ol id="calendar">
+
+            </ol>
+
+
+            <form id="cambiar" action="#">
+                <button id="año-atras">
+                    < A</button>
+                        <button id="mes-atras">
+                            < M</button>
+                                <input id="fechita" type="date" class="hide-calendar-icon">
+                                <button id="hoy">Hoy</button>
+                                <button id="mes-adelante">M ></button>
+                                <button id="año-adelante">A ></button>
+            </form>
+        </section>
+        <aside class="feriados">
+            <h3>Feriados</h3>
+            <p></p>
+        </aside>
+        <hr>
+        <section class="container" id="calcSueldo">
+            <h3>Calculo de Sueldo</h3>
+            <form action="#">
+                <label for="">Horas:
+                    <input type="number" placeholder="Ingrese la cantidad de horas" required>
+                </label>
+
+                <label for="">Valor Hora:
+                    <input type="number" placeholder="$" required>
+                </label>
+
+                <label for=""> Total Descuentos
+                    <input type="number" placeholder="$ opcional">
+                </label>
+
+                <label for="">Adicionales
+                    <input type="number" placeholder="$ opcional"></label>
+                <h3>Horas Extras(opcional)</h3>
+                <p class="extra"><input type="number" placeholder="Horas"> x <input type="number" placeholder="$">
+                    <button>Agregar</button></p>
+                <button>Calcular Sueldo</button>
+
+            </form>
+        </section>
+       <br>
+        <footer class="container">
+            <section class="redes">
+
+            </section>
+            <hr>
+            <section class="copy">
+                <p>© 2023 Torrejon Dario Rodrigo - All Rights Reserved</p>
+            </section>
+        </footer>
+        <script src="Scripts/date.js"></script>
+
+    </main>
+
+</body>
+
+</html>
