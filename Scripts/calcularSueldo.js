@@ -47,7 +47,7 @@ formSueldo.addEventListener('submit', ev =>{
     console.log($adi)
     if($hora != '' && $valorHora != '' && $desc != '' && $adi != ''){
         const resultado = ($hora*$valorHora) -$desc+$adi;
-        console.log(resultado);
+        alert("Sueldo neto: $",resultado);
         ev.target.hora.value ='';
         ev.target.valorHora.value = '';
         ev.target.descuento.value = '';
@@ -55,8 +55,11 @@ formSueldo.addEventListener('submit', ev =>{
     }
 })
 
-// formSueldo.hora.addEventListener('blur', ev =>{
-//     if(ev.target.value <1 || ev.target.value > 1000){
-//         ev.target.setCustomValidity("Ingrese una hora valida!")
-//     }
-// })
+
+//Revisar si esta bien el evento submit aqui!!!!!!!!!
+const $agregar = document.querySelector('#agregar');
+$agregar.addEventListener('submit', ev =>{
+    ev.preventDefault();
+    ev.stopPropagation();
+})
+
