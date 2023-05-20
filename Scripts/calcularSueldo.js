@@ -47,7 +47,7 @@ formSueldo.addEventListener('submit', ev =>{
     console.log($adi)
     if($hora != '' && $valorHora != '' && $desc != '' && $adi != ''){
         const resultado = ($hora*$valorHora) -$desc+$adi;
-        alert("Sueldo neto: $",resultado);
+        alert("Sueldo neto: $"+resultado);
         ev.target.hora.value ='';
         ev.target.valorHora.value = '';
         ev.target.descuento.value = '';
