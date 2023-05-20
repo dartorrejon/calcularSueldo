@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="Styles/calendar.css">
     <link rel="stylesheet" href="Styles/calcHoras.css">
+    <script src="https://kit.fontawesome.com/0e141151ad.js" crossorigin="anonymous"></script>
     <title>Inicio</title>
 </head>
 
-<body>
+<body id="Inicio">
 
     <header class="container">
         <nav>
             <h1>Calendario</h1>
             <ol>
                 <il><a href="#calcularSueldos"> Calcular Sueldo</a></il>
-                <il><a href=""> Claves</a></il>
-                <il><a href=""> Objetivos</a></il>
-                <li><a href="#feriados">Feriados 2023</a></li>
+                <il><a href="claves.html"> Claves Wifi</a></il>
+                <il><a href="objetivos.html"> Objetivos</a></il>
+                <li><a href="feriados.html">Feriados 2023</a></li>
             </ol>
         </nav>
     </header>
 
     <main>
-        <section class="container calendario-cont">
+        <section id="calendarioGG" class="container calendario-cont">
 
             <h2 class="cal-titulo"></h2>
             <ul>
@@ -64,29 +65,9 @@
                 <button id="buscarFecha">Ir</button>
             </form>
         </section>
-        <aside id="feriados" class="container"Navidad - 25 de diciembre (lunes)>
-            <h3>Feriados 2023</h3>
-            <ol>
-                <li>Año Nuevo - 1 de enero (domingo) </li>
-                <li>Carnaval - 27 y 28 de febrero (lunes y martes)</li>
-                <li>"Día Nacional de la Memoria por la Verdad y la Justicia - 24 de marzo (viernes)</li>
-                <li>Viernes Santo - 7 de abril (viernes)</li>
-                <li>Día del Veterano y de los Caídos en la Guerra de Malvinas - 2 de abril (domingo)</li>
-                <li>Día del Trabajador - 1 de mayo (lunes)</li>
-                <li>Día de la Revolución de Mayo - 25 de mayo (jueves)</li>
-                <li>Paso a la Inmortalidad del General Manuel Belgrano - 20 de junio (martes)</li>
-                <li>Día de la Independencia - 9 de julio (domingo)</li>
-                <li>Paso a la Inmortalidad del General José de San Martín - 21 de agosto (lunes)</li>
-                <li>Día del Respeto a la Diversidad Cultural - 16 de octubre (lunes)</li>
-                <li>Día de la Soberanía Nacional - 20 de noviembre (lunes)</li>
-                <li>Día de la Inmaculada Concepción - 8 de diciembre (viernes)</li>
-                <li>Navidad - 25 de diciembre (lunes)</li>
-            </ol>
-    
-        </aside>
-        <hr>
+           
         <section class="container" id="calcSueldo">
-            <h3 id="calcularSueldos">Calculo de Sueldo</h3>
+            <h3 id="calcularSueldos" class="subtitle">Calculo de Sueldo</h3>
             <form class="sueldo" action="#">
                 <label for="hora">Horas:
                     <input type="number" id="hora" placeholder="Ingrese la cantidad de horas" required>
@@ -113,10 +94,16 @@
         <br>
         <footer class="container">
             <section class="redes">
-
+                <a href="https://www.facebook.com/RoCc0h" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" title="Facebook"></i></a>
+                <a href="https://github.com/dartorrejon" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/drtorrejon/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5493875748804&text=Hola,%20me%20interes%20tu%20trabajo!" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
             </section>
             <hr>
             <section class="copy">
+                <p> <a href="#Inicio">Inicio</a> - 
+                    <a href="#calcularSueldos">Calcular Sueldo</a>
+                </p>
                 <p>© 2023 Torrejon Dario Rodrigo - All Rights Reserved</p>
             </section>
         </footer>
@@ -124,7 +111,7 @@
         <script src="Scripts/calcularSueldo.js"></script>
 
     </main>
-
+    407-0326
 </body>
 
 </html>

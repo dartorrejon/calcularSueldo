@@ -114,7 +114,7 @@ formBuscar.buscaMes.addEventListener("blur", ev => {
 
 formBuscar.buscaAño.addEventListener("blur", ev => {
 
-  if (ev.target.value < 1970 || ev.target.value > 3000) {
+  if (ev.target.value < 1901 || ev.target.value > 3000) {
     ev.target.setCustomValidity("Año invalido!");
   } else {
     ev.target.setCustomValidity('');
@@ -125,7 +125,11 @@ formBuscar.buscaAño.addEventListener("blur", ev => {
 formBuscar.addEventListener("submit", ev => {
   ev.preventDefault();
   ev.stopPropagation();
+  
   if (bDia != '' && bMes != '' && bAño != '') {
+    bAño = parseInt(bAño);
+    bMes = parseInt(bMes-1);
+    bDia = parseInt(bDia);
     cargarCalencario(new Date(bAño, bMes, bDia))
     ev.target.buscaDia.value = '';
     ev.target.buscaMes.value = '';

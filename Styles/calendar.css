@@ -19,7 +19,9 @@
     text-align: center;
 }
 
-
+.subtitle{
+    text-align: center;
+}
 
 .day-name {
     list-style: none;
@@ -33,7 +35,9 @@
 .hide-calendar-icon::-webkit-clear-button {
     display: none;
 }
-
+#calcSueldo{
+    margin-top: 50px;
+}
 #cambiar{
     
     display: flex;
@@ -62,4 +66,24 @@
     justify-content: space-evenly;
     gap: 5px;
 
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.6em;
+}
+
+.redes > a:hover{
+    transform: translate(1px, -4px);
+    transition: .4s ease-in-out;
+}
+.copy{
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 12px;
+}
+
+.copy > p> a{
+    text-decoration: none;
 }
