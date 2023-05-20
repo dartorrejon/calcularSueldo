@@ -13,16 +13,19 @@
 </head>
 
 <body>
+
     <header class="container">
         <nav>
-            <h1>Inicio</h1>
+            <h1>Calendario</h1>
             <ol>
-                <il><a href=""> Calcular Sueldo</a></il>
+                <il><a href="#calcularSueldos"> Calcular Sueldo</a></il>
                 <il><a href=""> Claves</a></il>
                 <il><a href=""> Objetivos</a></il>
+                <li><a href="#feriados">Feriados 2023</a></li>
             </ol>
         </nav>
     </header>
+
     <main>
         <section class="container calendario-cont">
 
@@ -41,47 +44,73 @@
             </ol>
 
 
-            <form id="cambiar" action="#">
+            <section id="cambiar" action="#">
                 <button id="año-atras">
                     < A</button>
                         <button id="mes-atras">
                             < M</button>
-                                <input id="fechita" type="date" class="hide-calendar-icon">
                                 <button id="hoy">Hoy</button>
                                 <button id="mes-adelante">M ></button>
                                 <button id="año-adelante">A ></button>
+            </section>
+
+
+            <form action="#" class="buscarFecha">
+                <div>
+                    <input id="buscaDia" type="number" placeholder="dd"> /
+                    <input id="buscaMes" type="number" placeholder="MM"> /
+                    <input id="buscaAño" type="number" placeholder="YY">
+                </div>
+                <button id="buscarFecha">Ir</button>
             </form>
         </section>
-        <aside class="feriados">
-            <h3>Feriados</h3>
-            <p></p>
+        <aside id="feriados" class="container"Navidad - 25 de diciembre (lunes)>
+            <h3>Feriados 2023</h3>
+            <ol>
+                <li>Año Nuevo - 1 de enero (domingo) </li>
+                <li>Carnaval - 27 y 28 de febrero (lunes y martes)</li>
+                <li>"Día Nacional de la Memoria por la Verdad y la Justicia - 24 de marzo (viernes)</li>
+                <li>Viernes Santo - 7 de abril (viernes)</li>
+                <li>Día del Veterano y de los Caídos en la Guerra de Malvinas - 2 de abril (domingo)</li>
+                <li>Día del Trabajador - 1 de mayo (lunes)</li>
+                <li>Día de la Revolución de Mayo - 25 de mayo (jueves)</li>
+                <li>Paso a la Inmortalidad del General Manuel Belgrano - 20 de junio (martes)</li>
+                <li>Día de la Independencia - 9 de julio (domingo)</li>
+                <li>Paso a la Inmortalidad del General José de San Martín - 21 de agosto (lunes)</li>
+                <li>Día del Respeto a la Diversidad Cultural - 16 de octubre (lunes)</li>
+                <li>Día de la Soberanía Nacional - 20 de noviembre (lunes)</li>
+                <li>Día de la Inmaculada Concepción - 8 de diciembre (viernes)</li>
+                <li>Navidad - 25 de diciembre (lunes)</li>
+            </ol>
+    
         </aside>
         <hr>
         <section class="container" id="calcSueldo">
-            <h3>Calculo de Sueldo</h3>
-            <form action="#">
-                <label for="">Horas:
-                    <input type="number" placeholder="Ingrese la cantidad de horas" required>
+            <h3 id="calcularSueldos">Calculo de Sueldo</h3>
+            <form class="sueldo" action="#">
+                <label for="hora">Horas:
+                    <input type="number" id="hora" placeholder="Ingrese la cantidad de horas" required>
                 </label>
 
-                <label for="">Valor Hora:
-                    <input type="number" placeholder="$" required>
+                <label for="valorHora">Valor Hora:
+                    <input type="number" id="valorHora" placeholder="$" required>
                 </label>
 
-                <label for=""> Total Descuentos
-                    <input type="number" placeholder="$ opcional">
+                <label for="descuento"> Total Descuentos
+                    <input type="number" id="descuento" step="0.01" placeholder="$ opcional">
                 </label>
 
-                <label for="">Adicionales
-                    <input type="number" placeholder="$ opcional"></label>
+                <label for="adicional">Adicionales
+                    <input type="number" id="adicional" step="0.01" placeholder="$ opcional"></label>
                 <h3>Horas Extras(opcional)</h3>
                 <p class="extra"><input type="number" placeholder="Horas"> x <input type="number" placeholder="$">
-                    <button>Agregar</button></p>
-                <button>Calcular Sueldo</button>
+                    <button>Agregar</button>
+                </p>
+                <button type="submit">Calcular Sueldo</button>
 
             </form>
         </section>
-       <br>
+        <br>
         <footer class="container">
             <section class="redes">
 
@@ -92,6 +121,7 @@
             </section>
         </footer>
         <script src="Scripts/date.js"></script>
+        <script src="Scripts/calcularSueldo.js"></script>
 
     </main>
 

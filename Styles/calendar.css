@@ -8,7 +8,7 @@
     text-align: center;
 }
 .calendario-cont > ol{
-    height: 25vh;
+      height: 250px;
 }
 
 .calendario-cont  > ol, .calendario-cont  > ul {
@@ -45,8 +45,21 @@
 #cambiar > button {
     padding: 0 3px;
     font-weight: bold;
+    height: 40px;
 }
 
 #cambiar > input {
     text-align: center;
+}
+
+.buscarFecha{
+    display: flex;
+    gap: 5px;
+}
+.buscarFecha > div{
+    display: flex;
+    line-height: 3;
+    justify-content: space-evenly;
+    gap: 5px;
+
 }
