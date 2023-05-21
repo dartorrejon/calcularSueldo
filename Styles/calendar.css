@@ -29,11 +29,25 @@
     text-align: center;
     
 }
-
-.hide-calendar-icon::-webkit-calendar-picker-indicator,
-.hide-calendar-icon::-webkit-inner-spin-button,
-.hide-calendar-icon::-webkit-clear-button {
-    display: none;
+.msjeError{
+    color: red;
+    margin-top: -30px;
+    text-align: top;
+    margin-bottom: 30px;
+}
+.vExtra{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4em;
+    
+}
+.vExtra > label{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 56px;
+   font-size: 20px;
+   font-weight: bold;
 }
 #calcSueldo{
     margin-top: 50px;
@@ -70,8 +84,8 @@
 .redes{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    font-size: 1.6em;
+    gap: 40px;
+    font-size: 2.5em;
 }
 
 .redes > a:hover{
