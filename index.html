@@ -90,9 +90,33 @@
                 </p>
                 <label for="" class="msjeError"></label>
                 
-                <button type="submit">Calcular Sueldo</button>
+                <button class="calculin" type="submit" data-target="modal-example">Calcular Sueldo</button>
 
             </form>
+
+            <!--Modal-->
+            <dialog id="modal-example">
+                <article>
+                  <a
+                    href="#close"
+                    aria-label="Close"
+                    class="close"
+                    data-target="modal-example"
+                    onclick="toggleModal(event)"
+                  ></a>
+                  <h3>Sueldo Total</h3>
+                  <p id="mostrarSueldo">
+                    
+                  </p>
+                  <footer>
+                  
+                    <a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)"
+                      >Confirm</a
+                    >
+                  </footer>
+                </article>
+              </dialog>
+
         </section>
         <br>
         <footer class="container">
@@ -112,6 +136,7 @@
         </footer>
         <script src="Scripts/date.js"></script>
         <script src="Scripts/calcularSueldo.js"></script>
+        <script src="Scripts/modal.js"></script>
 
     </main>
 

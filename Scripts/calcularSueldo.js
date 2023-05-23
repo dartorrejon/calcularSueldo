@@ -6,7 +6,7 @@ let $adi = 0;
 let contExtras = 0;
 let limiteExtras = 3;
 let lisExtras=[];
-console.log(lisExtras.length)
+const extraEntradas = document.querySelector('.extra');
 
 //Validacion de horas
 formSueldo.hora.addEventListener('blur', ev => {
@@ -57,7 +57,6 @@ formSueldo.addEventListener('submit', ev => {
         let hrsExtras;
         let extras = 0;
         if(lisExtras != []){
-            
             hrsExtras = document.querySelectorAll('.vExtra label');
             hrsExtras.forEach(valor => {
                 extras +=parseInt(valor.innerText);
@@ -66,7 +65,16 @@ formSueldo.addEventListener('submit', ev => {
             contExtras=0;
         }
         const resultado = ($hora * $valorHora) - $desc + $adi + extras;
-        alert("Sueldo neto: $" + resultado);
+        const pSueldo = document.querySelector('#mostrarSueldo');
+        if(formSueldo.hora.value != '' && formSueldo.valorHora.value != '') {
+            
+            const modal = document.querySelector('.calculin')
+            modal.setAttribute('onclick', 'toggleModal(event)');
+            modal.click();
+        }
+        
+
+        pSueldo.innerText = `$ ${resultado}`;
         ev.target.hora.value = '';
         ev.target.valorHora.value = '';
         ev.target.descuento.value = '';
