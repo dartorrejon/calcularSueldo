@@ -29,7 +29,8 @@ formSueldo.valorHora.addEventListener('blur', ev => {
 })
 
 //Validacion de descuento
-formSueldo.descuento.addEventListener('blur', ev => {
+formSueldo.descuento.addEventListener('change', ev => {
+    
     if (ev.target.value < 1 || ev.target.value > 10000) {
         ev.target.setCustomValidity("Ingrese un valor valido!")
     } else {
@@ -39,11 +40,13 @@ formSueldo.descuento.addEventListener('blur', ev => {
 })
 
 //Validacion de adicional
-formSueldo.adicional.addEventListener('blur', ev => {
+formSueldo.adicional.addEventListener('change', ev => {
+    
     if (ev.target.value < 1 || ev.target.value > 10000) {
         ev.target.setCustomValidity("Ingrese un valor valido!")
     } else {
         $adi = parseFloat(ev.target.value);
+       
         ev.target.setCustomValidity('')
     }
 })
@@ -59,7 +62,7 @@ formSueldo.addEventListener('submit', ev => {
         if(lisExtras != []){
             hrsExtras = document.querySelectorAll('.vExtra label');
             hrsExtras.forEach(valor => {
-                extras +=parseInt(valor.innerText);
+                extras +=parseInt(valor.innerText.slice(1));
                 valor.parentNode.remove();
             })
             contExtras=0;
@@ -73,7 +76,12 @@ formSueldo.addEventListener('submit', ev => {
             modal.click();
         }
         
-
+        const inputsExtra = document.querySelectorAll('.extra input');
+        
+        inputsExtra.forEach(valor => {
+            valor.removeAttribute('style');
+        
+        })
         pSueldo.innerText = `$ ${resultado}`;
         ev.target.hora.value = '';
         ev.target.valorHora.value = '';
@@ -107,7 +115,10 @@ $agregar.addEventListener('click', ev => {
             const p = document.createElement('p');
             const label = document.createElement('label');
             const bEliminar = document.createElement('button');
-            label.innerText = prod;
+            const span = document.createElement('span');
+            span.innerText = "$";
+            label.appendChild(span);
+            label.innerHTML += prod;
             label.setAttribute('readonly', 'true');
             bEliminar.innerText = "Eliminar";
             p.classList.add('vExtra');
@@ -119,7 +130,14 @@ $agregar.addEventListener('click', ev => {
                 ele.value = '';
             })
             lisExtras = document.querySelectorAll('.vExtra button');
+            valores[0].focus();
+            
         }
+        
+           
+        
+
+        
    
 
 
@@ -134,8 +152,11 @@ $agregar.addEventListener('click', ev => {
         const valores = document.querySelectorAll('.extra input')
         valores.forEach(ele => {
             ele.value = '';
+            ele.style.borderColor = 'red';
         })
+        
         document.querySelector('.msjeError').innerText = "No se puede agregar mas hrs extras!"
+        ev.target.focus();
         
     }
 })
@@ -144,6 +165,7 @@ $agregar.addEventListener('click', ev => {
 $agregar.addEventListener('click', ev => {
     ev.preventDefault();
     ev.stopPropagation();
+    let inputValores;
     lisExtras.forEach(ele => {
         ele.addEventListener('click', eve => {
             eve.preventDefault();
@@ -151,6 +173,11 @@ $agregar.addEventListener('click', ev => {
             eve.target.parentNode.remove();
             document.querySelector('.msjeError').innerText = "";
             contExtras = document.querySelectorAll('.vExtra button').length;
+            inputValores = document.querySelectorAll('.extra input');
+            inputValores.forEach(ele => {
+                ele.style.borderColor = 'initial';
+                
+            })
             
         })
     })

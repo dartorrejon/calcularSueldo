@@ -1,11 +1,25 @@
 .extra{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 10px;
     text-align: center;
     line-height: 3;
 }
 #mostrarSueldo{
     font-size: 1.5em;
-    text-align: center;
+    text-align: cemter;
 }
+.vExtra > label{
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    min-width: 156px;
+}
+.vExtra > label > span{
+    margin-left: 2.5em;
+    text-align: left;
+    color: green;
+   
+}
+
