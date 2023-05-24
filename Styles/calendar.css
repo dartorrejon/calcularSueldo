@@ -175,6 +175,7 @@ header>nav {
 
     .nav-items>a {
         color: #fff;
+        width: 100%;
     }
 
     .nav-items>a:hover {
