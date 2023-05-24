@@ -70,7 +70,6 @@ formSueldo.addEventListener('submit', ev => {
         const resultado = ($hora * $valorHora) - $desc + $adi + extras;
         const pSueldo = document.querySelector('#mostrarSueldo');
         if(formSueldo.hora.value != '' && formSueldo.valorHora.value != '') {
-            
             const modal = document.querySelector('.calculin')
             modal.setAttribute('onclick', 'toggleModal(event)');
             modal.click();
@@ -80,7 +79,6 @@ formSueldo.addEventListener('submit', ev => {
         
         inputsExtra.forEach(valor => {
             valor.removeAttribute('style');
-        
         })
         pSueldo.innerText = `$ ${resultado}`;
         ev.target.hora.value = '';
@@ -91,7 +89,6 @@ formSueldo.addEventListener('submit', ev => {
     }
 })
 
-
 //Agregamos horas extras
 const $agregar = document.querySelector('#agregar');
 $agregar.addEventListener('click', ev => {
@@ -101,14 +98,11 @@ $agregar.addEventListener('click', ev => {
     const valores = document.querySelectorAll('.extra input')
     valores.forEach(ele => {
         if (ele.value < 1 || ele.value > 1500 || ele.value == '') {
-            ele.style.borderColor = 'red';
-            
+            ele.style.borderColor = 'red';            
             prod = 0;
         } else {
             prod *= parseInt(ele.value)
-            ele.style.borderColor = "initial";
-
-           
+            ele.style.borderColor = "initial";           
         }
     })
         if(prod != 0 && contExtras < limiteExtras){
@@ -133,14 +127,6 @@ $agregar.addEventListener('click', ev => {
             valores[0].focus();
             
         }
-        
-           
-        
-
-        
-   
-
-
 })
 
 

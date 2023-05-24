@@ -10,19 +10,23 @@
     <link rel="stylesheet" href="Styles/calendar.css">
     <link rel="stylesheet" href="Styles/calcHoras.css">
     <script src="https://kit.fontawesome.com/0e141151ad.js" crossorigin="anonymous"></script>
-    <title>Inicio</title>
+    <title>Calendario</title>
 </head>
 
 <body id="Inicio">
 
-    <header class="container">
-        <nav>
-            <h1>Calendario</h1>
+    <header>
+        <div class="tituloPrincipal">
+            <h1></h1>
+        </div>
+            
+            <div class="menuToggle"></div>
+            <nav>
             <ol>
-                <il><a href="#calcularSueldos"> Calcular Sueldo</a></il>
-                <il><a href="claves.html"> Claves Wifi</a></il>
-                <il><a href="objetivos.html"> Objetivos</a></il>
-                <li><a href="feriados.html">Feriados 2023</a></li>
+                <li class="nav-items"><a href="#calcularSueldos"> Calcular Sueldo</a></li>
+                <li class="nav-items"><a href="claves.html"> Claves Wifi</a></li>
+                <li class="nav-items"><a href="objetivos.html"> Objetivos</a></li>
+                <li class="nav-items"><a href="feriados.html">Feriados 2023</a></li>
             </ol>
         </nav>
     </header>
@@ -77,13 +81,13 @@
                     <input type="number" id="valorHora" placeholder="$" required>
                 </label>
 
-                <label for="descuento"> Total Descuentos
+                <label for="descuento">Descuentos:
                     <input type="number" id="descuento" step="0.01" placeholder="$ opcional">
                 </label>
 
-                <label for="adicional">Adicionales
+                <label for="adicional">Adicionales:
                     <input type="number" id="adicional" step="0.01" placeholder="$ opcional"></label>
-                <h3>Horas Extras(opcional)</h3>
+                <h3 class="subtitle">Horas Extras(opcional)</h3>
                 
                 <p class="extra"><input type="number" placeholder="Horas"> x <input type="number" placeholder="$">
                     <button id="agregar">Agregar</button>
@@ -137,6 +141,7 @@
         <script src="Scripts/date.js"></script>
         <script src="Scripts/calcularSueldo.js"></script>
         <script src="Scripts/modal.js"></script>
+        <script src="Scripts/nav_responsive.js"></script>
 
     </main>
 
