@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="Styles/default.css">
     <link rel="stylesheet" href="Styles/calendar.css">
     <link rel="stylesheet" href="Styles/calcHoras.css">
     <script src="https://kit.fontawesome.com/0e141151ad.js" crossorigin="anonymous"></script>
@@ -19,9 +20,9 @@
         <div class="tituloPrincipal">
             <h1></h1>
         </div>
-            
-            <div class="menuToggle"></div>
-            <nav>
+
+        <div class="menuToggle"></div>
+        <nav>
             <ol>
                 <li class="nav-items"><a href="#calcularSueldos"> Calcular Sueldo</a></li>
                 <li class="nav-items"><a href="claves.html"> Claves Wifi</a></li>
@@ -59,17 +60,23 @@
                                 <button id="año-adelante">A ></button>
             </section>
 
+            <div class="container contFecha">
 
-            <form action="#" class="buscarFecha">
-                <div>
-                    <input id="buscaDia" type="number" placeholder="dd"> /
-                    <input id="buscaMes" type="number" placeholder="MM"> /
-                    <input id="buscaAño" type="number" placeholder="YY">
-                </div>
-                <button id="buscarFecha">Ir</button>
-            </form>
+
+                <form action="#" class="buscarFecha">
+                    <div>
+                        <input id="buscaDia" type="number" placeholder="dd"> /
+                        <input id="buscaMes" type="number" placeholder="MM"> /
+                        <input id="buscaAño" type="number" placeholder="YY">
+                    </div>
+                    <button id="buscarFecha">Ir</button>
+
+                </form>
+
+            </div>
+            <span id="fechaError"></span>
         </section>
-           
+
         <section class="container" id="calcSueldo">
             <h3 id="calcularSueldos" class="subtitle">Calculo de Sueldo</h3>
             <form class="sueldo" action="#">
@@ -88,12 +95,12 @@
                 <label for="adicional">Adicionales:
                     <input type="number" id="adicional" step="0.01" placeholder="$ opcional"></label>
                 <h3 class="subtitle">Horas Extras(opcional)</h3>
-                
+
                 <p class="extra"><input type="number" placeholder="Horas"> x <input type="number" placeholder="$">
                     <button id="agregar">Agregar</button>
                 </p>
                 <label for="" class="msjeError"></label>
-                
+
                 <button class="calculin" type="submit" data-target="modal-example">Calcular Sueldo</button>
 
             </form>
@@ -101,49 +108,53 @@
             <!--Modal-->
             <dialog id="modal-example">
                 <article>
-                  <a
-                    href="#close"
-                    aria-label="Close"
-                    class="close"
-                    data-target="modal-example"
-                    onclick="toggleModal(event)"
-                  ></a>
-                  <h3>Sueldo Total</h3>
-                  <p id="mostrarSueldo">
-                    
-                  </p>
-                  <footer>
-                  
-                    <a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)"
-                      >Confirm</a
-                    >
-                  </footer>
+                    <a href="#close" aria-label="Close" class="close" data-target="modal-example"
+                        onclick="toggleModal(event)"></a>
+                    <h3>Sueldo Total</h3>
+                    <p id="mostrarSueldo">
+
+                    </p>
+                    <footer>
+
+                        <a href="#confirm" role="button" data-target="modal-example"
+                            onclick="toggleModal(event)">Confirm</a>
+                    </footer>
                 </article>
-              </dialog>
+            </dialog>
 
         </section>
-        <br>
-        <footer class="container">
-            <section class="redes">
-                <a href="https://github.com/dartorrejon" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/drtorrejon/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/RoCc0h" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" title="Facebook"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5493875748804&text=Hola,%20me%20interes%20tu%20trabajo!" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            </section>
-            <hr>
-            <section class="copy">
-                <p> <a href="#Inicio">Inicio</a> - 
-                    <a href="#calcularSueldos">Calcular Sueldo</a>
-                </p>
-                <p>© 2023 Torrejon Dario Rodrigo - All Rights Reserved</p>
-            </section>
-        </footer>
-        <script src="Scripts/date.js"></script>
-        <script src="Scripts/calcularSueldo.js"></script>
-        <script src="Scripts/modal.js"></script>
-        <script src="Scripts/nav_responsive.js"></script>
-
     </main>
+
+    <footer class="container">
+        <section class="redes">
+            <a href="https://github.com/dartorrejon" title="GitHub" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/drtorrejon/" title="LinkedIn" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/RoCc0h" title="Facebook" target="_blank"><i class="fa-brands fa-facebook"
+                    title="Facebook"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5493875748804&text=Hola,%20me%20interes%20tu%20trabajo!"
+                title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        </section>
+        <hr>
+        <section class="copy">
+            <p> <a href="#Inicio">Inicio</a> •
+                <a href="#calcularSueldos">Calcular Sueldo</a> •
+                <a href="claves.html">Claves Wifi</a> •
+                <a href="objetivos.html">Objetivos</a> •
+                <a href="feriados.html">Feriados 2023</a>
+            </p>
+            <p>© 2023 Torrejon Dario Rodrigo - All Rights Reserved</p>
+        </section>
+    </footer>
+
+    <script src="Scripts/date.js"></script>
+    <script src="Scripts/calcularSueldo.js"></script>
+    <script src="Scripts/modal.js"></script>
+    <script src="Scripts/nav_responsive.js"></script>
+    <script src="Scripts/smooth.js"></script>
+
+
 
 </body>
 
