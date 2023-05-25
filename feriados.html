@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="Styles/default.css">
     <script src="https://kit.fontawesome.com/0e141151ad.js" crossorigin="anonymous"></script>
     <title>Feriados 2023</title>
 </head>
 <body>
-    <header class="container">
+    <header>
+        <div class="tituloPrincipal">
+            <h1></h1>
+        </div>
+
+        <div class="menuToggle"></div>
         <nav>
-            <h1>Feriados 2023</h1>
             <ol>
-                <il><a href="index.html">Calendario</a></il>
-                <il><a href="claves.html"> Claves Wifi</a></il>
-                <il><a href="objetivos.html">Objetivos</a></il>
-                <li><a href="feriados.html">Feriados 2023</a></li>
+                <li class="nav-items"><a href="./index.html#calcularSueldos"> Calcular Sueldo</a></li>
+                <li class="nav-items"><a href="claves.html"> Claves Wifi</a></li>
+                <li class="nav-items"><a href="objetivos.html"> Objetivos</a></li>
+                <li class="nav-items"><a href="feriados.html">Feriados 2023</a></li>
             </ol>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <h3 class="subtitle">Feriados 2023</h3>
         <ul>
             <li>Año Nuevo - 1 de enero (domingo) </li>
@@ -42,19 +47,30 @@
     </main>
     <footer class="container">
         <section class="redes">
-            <a href="" title="Facebook"><i class="fa-brands fa-facebook" title="Facebook"></i></a>
-            <a href="" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/dartorrejon" title="GitHub" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/drtorrejon/" title="LinkedIn" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/RoCc0h" title="Facebook" target="_blank"><i class="fa-brands fa-facebook"
+                    title="Facebook"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5493875748804&text=Hola,%20me%20interes%20tu%20trabajo!"
+                title="Whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/DartoDev" title="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
         </section>
         <hr>
         <section class="copy">
-            <p> <a href="#Inicio">Inicio</a> - 
-                <a href="#calendarioGG">Calendario</a> - 
-                <a href="#calcularSueldos">Calcular Sueldo</a> - 
+            <p> <a href="#Inicio">Inicio</a> •
+                <a href="./index.html#calcularSueldos">Calcular Sueldo</a> •
+                <a href="claves.html">Claves Wifi</a> •
+                <a href="objetivos.html">Objetivos</a> •
+                <a href="feriados.html">Feriados 2023</a>
             </p>
             <p>© 2023 Torrejon Dario Rodrigo - All Rights Reserved</p>
         </section>
     </footer>
+
+   
+    <script src="Scripts/nav_responsive.js"></script>
+    <script src="Scripts/smooth.js"></script>
 </body>
 </html>

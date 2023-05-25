@@ -16,6 +16,7 @@ header {
     padding-left: 2em;
 }
 
+
 header>nav {
     padding-right: 2em;
 }
@@ -83,6 +84,7 @@ header>nav {
         left: 50%;
         transform: translate(0, -50%);
         text-align: center;
+        width: 180px;
     }
 
     header nav {
@@ -110,6 +112,7 @@ header>nav {
     .nav-items>a {
         color: #fff;
         width: 100%;
+        padding-left: 20px;
     }
 
     .nav-items>a:hover {
@@ -164,8 +167,11 @@ header>nav {
         transform: rotate(-45deg);
     }
 
+    .copy > p:first-child{
+        line-height: 25pt;
+    }
     .copy > p:last-child{
-        font-size: 1em;
+        font-size: 1.35em;
         
     }
     
