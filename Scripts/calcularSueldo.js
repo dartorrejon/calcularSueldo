@@ -4,7 +4,7 @@ let $valorHora = '';
 let $desc = 0;
 let $adi = 0;
 let contExtras = 0;
-let limiteExtras = 3;
+let limiteExtras = 6;
 let lisExtras=[];
 const extraEntradas = document.querySelector('.extra');
 
@@ -67,6 +67,7 @@ formSueldo.addEventListener('submit', ev => {
             })
             contExtras=0;
         }
+        
         const resultado = ($hora * $valorHora) - $desc + $adi + extras;
         const pSueldo = document.querySelector('#mostrarSueldo');
         if(formSueldo.hora.value != '' && formSueldo.valorHora.value != '') {
@@ -105,6 +106,7 @@ $agregar.addEventListener('click', ev => {
             ele.style.borderColor = "initial";           
         }
     })
+    
         if(prod != 0 && contExtras < limiteExtras){
             const p = document.createElement('p');
             const label = document.createElement('label');
@@ -140,7 +142,6 @@ $agregar.addEventListener('click', ev => {
             ele.value = '';
             ele.style.borderColor = 'red';
         })
-        
         document.querySelector('.msjeError').innerText = "No se puede agregar mas hrs extras!"
         ev.target.focus();
         
