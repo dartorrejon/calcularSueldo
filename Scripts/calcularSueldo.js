@@ -81,6 +81,9 @@ formSueldo.addEventListener('submit', ev => {
         inputsExtra.forEach(valor => {
             valor.removeAttribute('style');
         })
+        //Reseteamos los valores que necesitamos para un nuevo calculo
+        $desc=0
+        $adi=0
         pSueldo.innerText = `$ ${resultado}`;
         ev.target.hora.value = '';
         ev.target.valorHora.value = '';

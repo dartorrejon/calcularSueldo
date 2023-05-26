@@ -139,9 +139,34 @@ formBuscar.addEventListener("submit", ev => {
 
 })
 
+//Revisar esta formula para ver si la fecha es valida
+const validarFecha = (dia, mes, año) => {
+  let dias31 = [01,03,05,07,08,10,12]
+  let dias30 = [04,06,09,11]
+  let bisiesto = false;
 
+if ((año % 4 == 0 && año % 100 != 0) || año % 400 == 0){
+    bisiesto = true
+}
+if(mes === 2 && bisiesto && dia <= 29){
+  return true;
+}else{
+  return false;
+}
 
+if((dias31.find(ele => ele == mes)) && dia <=31){
+  return true
+}else {
+  return false
+}
 
+if((dias30.find(ele => ele == mes)) && dia <=30){
+  return true
+}else {
+  return false
+}
+
+}
 //Evento para el boton año atras
 document.querySelector("#año-atras").addEventListener("click", ev => {
   ev.preventDefault();

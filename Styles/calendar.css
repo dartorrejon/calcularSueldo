@@ -97,7 +97,7 @@ main{
 .buscarFecha {
     display: flex;
     gap: 15px;
-    width:  80vw;
+    width: 90vw;
     justify-content: center;
     text-align: center;
 }
@@ -110,7 +110,7 @@ main{
     
 }
 #buscarFecha{
-    width: 130px;
+    width: 160px;
 }
 @media screen and (max-width:800px){
     main{
@@ -120,8 +120,12 @@ main{
     #calendarioGG{
         padding-top: initial;}
     .buscarFecha{
-        width: 100vw;
+        width: 90vw;
         gap: 5px;
+        justify-content: space-between;
+    }
+    #buscarFecha{
+        width: 6em;
     }
     #buscaDia,
     #buscaMes{
@@ -130,7 +134,5 @@ main{
     #buscaAño{
         width: 80px;
     }
-    #buscarFecha{
-        width: initial;
-    }
+    
 }
