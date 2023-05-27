@@ -36,6 +36,26 @@ const obtenerClave = (obj, valor) => {
   return null; // Si no se encuentra el valor en ninguna clave
 }
 
+//Formula para validar fecha ingrtesada
+const validarFecha = (dia, mes, año) => {
+  let dias31 = [01, 03, 05, 07, 08, 10, 12]
+  let dias30 = [04, 06, 09, 11]
+  let bisiesto = false;
+
+  if ((año % 4 == 0 && año % 100 != 0) || año % 400 == 0) {
+    bisiesto = true
+  }
+
+  if ((dias31.find(ele => ele == mes)) && dia <= 31) {
+    return true
+  } else if ((dias30.find(ele => ele == mes)) && dia <= 30) {
+    return true
+  } else if ((mes === 2 && bisiesto && dia <= 29) || (mes === 2 && !bisiesto && dia <= 28)) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 //Feriados - INCOMPLETO!!!!!!!
 const feriados = {
@@ -125,12 +145,23 @@ formBuscar.buscaAño.addEventListener("blur", ev => {
 formBuscar.addEventListener("submit", ev => {
   ev.preventDefault();
   ev.stopPropagation();
+  let msjeFechaError = document.querySelector("#fechaError");
+  msjeFechaError.style.color = "red";
   
   if (bDia != '' && bMes != '' && bAño != '') {
     bAño = parseInt(bAño);
-    bMes = parseInt(bMes-1);
+    bMes = parseInt(bMes - 1);
     bDia = parseInt(bDia);
-    cargarCalencario(new Date(bAño, bMes, bDia))
+    
+    if(validarFecha(bDia,bMes+1,bAño)){
+      cargarCalencario(new Date(bAño, bMes, bDia))
+    }else{
+      msjeFechaError.classList.toggle("oculto");
+    }
+  
+    setTimeout(() =>{
+      msjeFechaError.classList.toggle("oculto");
+    }, 1200);
     ev.target.buscaDia.value = '';
     ev.target.buscaMes.value = '';
     ev.target.buscaAño.value = '';
@@ -139,34 +170,7 @@ formBuscar.addEventListener("submit", ev => {
 
 })
 
-//Revisar esta formula para ver si la fecha es valida
-const validarFecha = (dia, mes, año) => {
-  let dias31 = [01,03,05,07,08,10,12]
-  let dias30 = [04,06,09,11]
-  let bisiesto = false;
 
-if ((año % 4 == 0 && año % 100 != 0) || año % 400 == 0){
-    bisiesto = true
-}
-if(mes === 2 && bisiesto && dia <= 29){
-  return true;
-}else{
-  return false;
-}
-
-if((dias31.find(ele => ele == mes)) && dia <=31){
-  return true
-}else {
-  return false
-}
-
-if((dias30.find(ele => ele == mes)) && dia <=30){
-  return true
-}else {
-  return false
-}
-
-}
 //Evento para el boton año atras
 document.querySelector("#año-atras").addEventListener("click", ev => {
   ev.preventDefault();

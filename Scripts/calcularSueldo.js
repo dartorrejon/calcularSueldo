@@ -3,13 +3,18 @@ let $hora = '';
 let $valorHora = '';
 let $desc = 0;
 let $adi = 0;
+
 let contExtras = 0;
 let limiteExtras = 6;
 let lisExtras=[];
+
+let contadorExtras = 0;
+let sumExtras = 0;
+let contarHoras = {}
 const extraEntradas = document.querySelector('.extra');
 
 //Validacion de horas
-formSueldo.hora.addEventListener('blur', ev => {
+formSueldo.hora.addEventListener('change', ev => {
     if (ev.target.value < 1 || ev.target.value > 1000) {
         ev.target.setCustomValidity("Ingrese una hora valida!")
     } else {
@@ -19,7 +24,7 @@ formSueldo.hora.addEventListener('blur', ev => {
 })
 
 //Validacion de valor hora
-formSueldo.valorHora.addEventListener('blur', ev => {
+formSueldo.valorHora.addEventListener('change', ev => {
     if (ev.target.value < 1 || ev.target.value > 2000) {
         ev.target.setCustomValidity("Ingrese un valor valido!")
     } else {
@@ -77,8 +82,7 @@ formSueldo.addEventListener('submit', ev => {
         }
         
         const inputsExtra = document.querySelectorAll('.extra input');
-        
-        inputsExtra.forEach(valor => {
+            inputsExtra.forEach(valor => {
             valor.removeAttribute('style');
         })
         //Reseteamos los valores que necesitamos para un nuevo calculo

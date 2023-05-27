@@ -61,6 +61,7 @@ header>nav {
     font-style: italic;
     
 }
+
 /* Haciendo responsive la pagina */
 @media (max-width:800px) {
     header {
