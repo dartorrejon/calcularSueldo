@@ -158,10 +158,12 @@ formBuscar.addEventListener("submit", ev => {
     }else{
       msjeFechaError.classList.toggle("oculto");
     }
-  
-    setTimeout(() =>{
-      msjeFechaError.classList.toggle("oculto");
-    }, 1200);
+    
+    if(msjeFechaError.className == ""){
+      setTimeout(() =>{
+        msjeFechaError.classList.toggle("oculto");
+      }, 1200);
+    }
     ev.target.buscaDia.value = '';
     ev.target.buscaMes.value = '';
     ev.target.buscaAño.value = '';
