@@ -5,9 +5,10 @@
     text-align: center;
     line-height: 3;
 }
-#mostrarSueldo{
+#mostrarSueldo, #mostrarHoras{
     font-size: 1.5em;
-    text-align: cemter;
+    text-align: right;
+    line-height: .8;
 }
 .vExtra > label{
     font-style: italic;
@@ -21,5 +22,9 @@
     text-align: left;
     color: green;
    
+}
+
+#modal-example{
+    padding: 20px 30px;
 }
 

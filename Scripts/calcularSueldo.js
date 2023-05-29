@@ -77,15 +77,18 @@ formSueldo.addEventListener('submit', ev => {
 
         const resultado = ($hora * $valorHora) - $desc + $adi + extras;
         const pSueldo = document.querySelector('#mostrarSueldo');
+        const pHoras = document.querySelector('#mostrarHoras');
         Object.keys(contarHoras).forEach(function(key) {
             sumExtras += contarHoras[key];
         })
         sumExtras += $hora;
-        console.log(sumExtras);
+        pHoras.innerText = sumExtras;
+        pSueldo.innerText = `$ ${resultado}`;
         if (formSueldo.hora.value != '' && formSueldo.valorHora.value != '') {
             const modal = document.querySelector('.calculin')
             modal.setAttribute('onclick', 'toggleModal(event)');
             modal.click();
+            
         }
 
         const inputsExtra = document.querySelectorAll('.extra input');
@@ -99,7 +102,7 @@ formSueldo.addEventListener('submit', ev => {
         contarHoras = {}
         $desc = 0
         $adi = 0
-        pSueldo.innerText = `$ ${resultado}`;
+        
         ev.target.hora.value = '';
         ev.target.valorHora.value = '';
         ev.target.descuento.value = '';
@@ -132,7 +135,6 @@ $agregar.addEventListener('click', ev => {
         const span = document.createElement('span');
         bEliminar.classList.add(`button${cont}`);
         contarHoras[`button${cont}`] = parseInt(document.querySelector('.extra').firstChild.value);
-        console.log(contarHoras);
         cont++;
         span.innerText = "$";
         label.appendChild(span);
@@ -180,7 +182,6 @@ $agregar.addEventListener('click', ev => {
             eve.preventDefault();
             eve.stopPropagation();
             delete contarHoras[eve.target.className];
-            console.log(contarHoras);
             eve.target.parentNode.remove();
             document.querySelector('.msjeError').innerText = "";
             contExtras = document.querySelectorAll('.vExtra button').length;
