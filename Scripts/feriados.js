@@ -16,7 +16,7 @@ const nombresMeses = [
 let tituloFeriados = document.querySelector('title');
 tituloFeriados.innerText = `Feriados ${año}` //agregamos el año actual al titulo
 
-const feriados = fetch(`http://nolaborables.com.ar/api/v2/feriados/${año}`);
+const feriados = fetch(`https://nolaborables.com.ar/api/v2/feriados/${año}`);
 
     feriados
     .then(res => res.json())
