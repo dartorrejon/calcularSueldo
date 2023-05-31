@@ -1,4 +1,3 @@
-
 const cantDias = (mes, año) => {
   const fecha = new Date(año, mes + 1, 1);
   fecha.setDate(0);
@@ -57,23 +56,6 @@ const validarFecha = (dia, mes, año) => {
   }
 }
 
-//Feriados - INCOMPLETO!!!!!!!
-const feriados = {
-  0: "Año Nuevo - 1 de enero (domingo)",
-  1: "Carnaval - 27 y 28 de febrero (lunes y martes)",
-  2: "Día Nacional de la Memoria por la Verdad y la Justicia - 24 de marzo (viernes)",
-  3: "Viernes Santo - 7 de abril (viernes)",
-  4: "Día del Veterano y de los Caídos en la Guerra de Malvinas - 2 de abril (domingo)",
-  5: "Día del Trabajador - 1 de mayo (lunes)",
-  6: "Día de la Revolución de Mayo - 25 de mayo (jueves)",
-  7: "Paso a la Inmortalidad del General Manuel Belgrano - 20 de junio (martes)",
-  8: "Día de la Independencia - 9 de julio (domingo)",
-  9: "Paso a la Inmortalidad del General José de San Martín - 21 de agosto (lunes)",
-  10: "Día del Respeto a la Diversidad Cultural - 16 de octubre (lunes)",
-  11: "Día de la Soberanía Nacional - 20 de noviembre (lunes)",
-  12: "Día de la Inmaculada Concepción - 8 de diciembre (viernes)",
-  13: "Navidad - 25 de diciembre (lunes)"
-}
 //Funcion para cargar el Calendario 
 const cargarCalencario = fecha => {
   const mes = fecha.getMonth();
@@ -171,7 +153,6 @@ formBuscar.addEventListener("submit", ev => {
 
 
 })
-
 
 //Evento para el boton año atras
 document.querySelector("#año-atras").addEventListener("click", ev => {

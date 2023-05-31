@@ -1,8 +1,22 @@
 #Actualizacion{
     text-align: right;
     font-weight: bolder;
+    font-size: 1.2em;
 }
 
 #contraseñas div p{
     font-style: italic;
+    
+}
+@media only screen and (min-width:800px){
+    #contraseñas {
+        display: grid;
+        grid-template-rows: repeat(9,auto);
+        grid-auto-flow: column;
+        column-gap: 10px;
+          
+    }
+    #contraseñas div p{
+        font-size: .9em;  
+    }
 }

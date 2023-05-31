@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    
     <link rel="stylesheet" href="Styles/default.css">
+    <link rel="stylesheet" href="Styles/objetivos.css">
     <script src="https://kit.fontawesome.com/0e141151ad.js" crossorigin="anonymous"></script>
     <title>Objetivos</title>
 </head>
 <body>
     <header id="Inicio">
+        <div class="tituloContainer">
         <div class="tituloPrincipal">
             <h1></h1>
         </div>
 
         <div class="menuToggle"></div>
+    </div>
         <nav>
             <ol>
                 <li class="nav-items"><a href="index.html">Calendario</a></li>
@@ -26,8 +30,15 @@
             </ol>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <section id="buscador" class="container">
+            <h3>Buscador</h3>
+            <input type="search" id="search" name="search" placeholder="Search">
+        </section>
+        <section id="objetivos" class="container">
+            
+        </section>
     </main>
     <footer class="container">
         <section class="redes">
@@ -55,5 +66,6 @@
    
     <script src="Scripts/nav_responsive.js"></script>
     <script src="Scripts/smooth.js"></script>
+    <script src="Scripts/objetivos.js"></script>
 </body>
 </html>

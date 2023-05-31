@@ -22,5 +22,5 @@ xhr.addEventListener('load', ev =>{
     
 })
 
-xhr.open('GET',"./txt/claves.txt");
+xhr.open('GET',"./data/claves.txt");
 xhr.send();

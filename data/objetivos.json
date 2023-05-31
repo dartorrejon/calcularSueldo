@@ -1,0 +1,49 @@
+[{
+    "titulo":"Plaza Intendencia I y II",
+    "src":"/IMG/Objetivos/PlazaIntendencia1y2.png",
+    "alt":"Plaza Intendencia",
+    "direccion":"Duarte Quiros 433",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"MALO",
+    "baño":"Piso 13",
+    "wifi":"Si",
+    "fechaActualizacion":"30-05-2023"
+},
+{
+    "titulo":"Zigurat",
+    "src":"/IMG/Objetivos/Zigurat.png",
+    "alt":"Zigurat",
+    "direccion":"Bv. San Juan 19",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"No",
+    "fechaActualizacion":"30-05-2023"
+},
+{
+    "titulo":"Aranjuez 3",
+    "src":"/IMG/Objetivos/Aranjuez3.png",
+    "alt":"Aranjuez 3",
+    "direccion":"Obispo Salgueiro 561",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"No",
+    "fechaActualizacion":"30-05-2023"
+},
+{
+    "titulo":"Florida 27",
+    "src":"/IMG/Objetivos/Florida27.png",
+    "alt":"Florida 27",
+    "direccion":"Buenos Aires 462",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"No",
+    "fechaActualizacion":"30-05-2023"
+}
+]
