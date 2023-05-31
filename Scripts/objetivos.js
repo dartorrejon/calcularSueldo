@@ -33,7 +33,7 @@ fetch("/data/objetivos.json")
 document.addEventListener('keyup', ev =>{
     if(ev.target.matches('#search')){
         document.querySelectorAll('.objetivo > h5').forEach(objetivo =>{
-            objetivo.textContent.toLowerCase().includes(ev.target.value)
+            objetivo.textContent.toLowerCase().includes(ev.target.value.toLowerCase())
             ?objetivo.parentNode.classList.remove('filtro')
             :objetivo.parentNode.classList.add('filtro');            
         })
