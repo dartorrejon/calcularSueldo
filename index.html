@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +9,8 @@
     <link rel="stylesheet" href="Styles/default.css">
     <link rel="stylesheet" href="Styles/calendar.css">
     <link rel="stylesheet" href="Styles/calcHoras.css">
-   
-    
     <title>Sueldo App</title>
 </head>
-
 <body id="Inicio">
     <!-- Encabezado -->
     <header>
@@ -37,7 +33,6 @@
     <main>
         <!-- Calendario -->
         <section id="calendarioGG" class="container calendario-cont">
-
             <h2 class="cal-titulo"></h2>
             <ul>
                 <li class="day-name">Dom</li>
@@ -51,7 +46,6 @@
             <ol id="calendar">
 
             </ol>
-
             <section id="cambiar" action="#">
                 <button id="año-atras">< A</button>
                 <button id="mes-atras">< M</button>
@@ -61,8 +55,6 @@
             </section>
 
             <div class="container contFecha">
-
-
                 <form action="#" class="buscarFecha">
                     <div>
                         <input id="buscaDia" type="number" placeholder="dd"> /
@@ -70,9 +62,7 @@
                         <input id="buscaAño" type="number" placeholder="YY">
                     </div>
                     <button id="buscarFecha">Ir</button>
-
                 </form>
-
             </div>
             <span class="oculto" id="fechaError">Fecha no valida!</span>
         </section>
@@ -94,35 +84,33 @@
                 </label>
 
                 <label for="adicional">Adicionales:
-                    <input type="number" id="adicional" step="0.01" placeholder="$ opcional"></label>
+                    <input type="number" id="adicional" step="0.01" placeholder="$ opcional">
+                </label>
+               
                 <h3 class="subtitle">Horas Extras(opcional)</h3>
-
                 <p class="extra"><input type="number" placeholder="Horas"> x <input type="number" placeholder="$">
                     <button id="agregar">Agregar</button>
                 </p>
                 <label for="" class="msjeError"></label>
-
                 <button class="calculin" type="submit" data-target="modal-example">Calcular Sueldo</button>
-
             </form>
-
-            <!--Modal-->
-            <dialog id="modal-example">
-                <article>
-                    <a href="#close" aria-label="Close" class="close" data-target="modal-example"
-                        onclick="toggleModal(event)"></a>
-                    <h3>Sueldo Total</h3>
-                    <p id="mostrarSueldo"></p>
-                    <h4>Total horas</h4>
-                    <p id="mostrarHoras"></p>
-                    <footer>
-                        <a href="#confirm" role="button" data-target="modal-example"
-                            onclick="toggleModal(event)">Aceptar</a>
-                    </footer>
-                </article>
-            </dialog>
-
         </section>
+        
+         <!--Modal-->
+         <dialog id="modal-example">
+            <article>
+                <a href="#close" aria-label="Close" class="close" data-target="modal-example"
+                    onclick="toggleModal(event)"></a>
+                <h3>Sueldo Total</h3>
+                <p id="mostrarSueldo"></p>
+                <h4>Total horas</h4>
+                <p id="mostrarHoras"></p>
+                <footer>
+                    <a href="#confirm" role="button" data-target="modal-example"
+                        onclick="toggleModal(event)">Aceptar</a>
+                </footer>
+            </article>
+        </dialog>
     </main>
     <!-- Pie de Pagina -->
     <footer class="container">

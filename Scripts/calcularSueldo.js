@@ -88,7 +88,6 @@ formSueldo.addEventListener('submit', ev => {
             const modal = document.querySelector('.calculin')
             modal.setAttribute('onclick', 'toggleModal(event)');
             modal.click();
-            
         }
 
         const inputsExtra = document.querySelectorAll('.extra input');
@@ -102,7 +101,6 @@ formSueldo.addEventListener('submit', ev => {
         contarHoras = {}
         $desc = 0
         $adi = 0
-        
         ev.target.hora.value = '';
         ev.target.valorHora.value = '';
         ev.target.descuento.value = '';
@@ -151,7 +149,6 @@ $agregar.addEventListener('click', ev => {
         })
         lisExtras = document.querySelectorAll('.vExtra button');
         valores[0].focus();
-
     }
 })
 
@@ -168,7 +165,6 @@ $agregar.addEventListener('click', ev => {
         })
         document.querySelector('.msjeError').innerText = "No se puede agregar mas hrs extras!"
         ev.target.focus();
-
     }
 })
 
@@ -188,7 +184,6 @@ $agregar.addEventListener('click', ev => {
             inputValores = document.querySelectorAll('.extra input');
             inputValores.forEach(ele => {
                 ele.style.borderColor = 'initial';
-
             })
 
         })
