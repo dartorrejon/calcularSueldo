@@ -38,7 +38,7 @@ formSueldo.valorHora.addEventListener('change', ev => {
 //Validacion de descuento
 formSueldo.descuento.addEventListener('change', ev => {
 
-    if (ev.target.value < 1 || ev.target.value > 10000) {
+    if (ev.target.value < 1 || ev.target.value > 30000) {
         ev.target.setCustomValidity("Ingrese un valor valido!")
     } else {
         $desc = parseFloat(ev.target.value);

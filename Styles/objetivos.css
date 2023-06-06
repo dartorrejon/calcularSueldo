@@ -6,6 +6,15 @@
     align-items: center;
     
 }
+marquee{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    color: rgb(255, 0, 0);
+    font-style: italic;
+    font-size: 1.2em;
+}
+
 .objetivo h5{
     padding: 0 5px ;
     text-align: center;
@@ -48,5 +57,9 @@
         display: grid;
         grid-template-columns: repeat(2,auto);
         column-gap: .8em;
+    }
+    .imgContainer{
+        width: 400px;
+        height: 300px;
     }
 }

@@ -53,7 +53,7 @@
                 <button id="mes-adelante">M ></button>
                 <button id="año-adelante">A ></button>
             </section>
-
+            <span class="oculto" id="fechaError">Fecha no valida!</span>
             <div class="container contFecha">
                 <form action="#" class="buscarFecha">
                     <div>
@@ -64,7 +64,9 @@
                     <button id="buscarFecha">Ir</button>
                 </form>
             </div>
-            <span class="oculto" id="fechaError">Fecha no valida!</span>
+            
+            
+            <div class="feriadosDescripcion"></div>
         </section>
 
         <!-- Calculo de Sueldo -->
@@ -113,7 +115,8 @@
         </dialog>
     </main>
     <!-- Pie de Pagina -->
-    <footer class="container">
+    <div class="contFooter container">
+       <footer class="container">
         <section class="redes">
             <a href="https://github.com/dartorrejon" title="GitHub" target="_blank"><i
                     class="fa-brands fa-github"></i></a>
@@ -135,7 +138,7 @@
             <p>© 2023 Torrejon Dario Rodrigo - All Rights Reserved</p>
         </section>
     </footer>
-
+</div>
     <script src="Scripts/date.js"></script>
     <script src="Scripts/calcularSueldo.js"></script>
     <script src="Scripts/modal.js"></script>

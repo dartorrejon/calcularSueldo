@@ -45,5 +45,17 @@
     "baño":"Planta Baja",
     "wifi":"No",
     "fechaActualizacion":"30-05-2023"
+},
+{
+    "titulo":"Parque 3",
+    "src":"/IMG/Objetivos/Estrada147.png",
+    "alt":"Parque 3",
+    "direccion":"Estrada 147",
+    "estufa":"NO",
+    "ventilador":"SI",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"No",
+    "fechaActualizacion":"05-06-2023"
 }
 ]
