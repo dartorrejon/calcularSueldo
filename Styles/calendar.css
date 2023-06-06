@@ -131,7 +131,7 @@ main{
     width: 100%;
     bottom: -450px;
 }
-footer{
+.footer__ppal{
    position: absolute;
    left: 0;
    bottom: 0;
