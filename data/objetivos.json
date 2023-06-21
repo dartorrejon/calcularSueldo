@@ -57,5 +57,17 @@
     "baño":"Planta Baja",
     "wifi":"No",
     "fechaActualizacion":"05-06-2023"
+},
+{
+    "titulo":"Balcones de Calicanto",
+    "src":"/IMG/Objetivos/calicanto.png",
+    "alt":"Balcones de Calicanto",
+    "direccion":"Belgrano 425",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Piso 13",
+    "wifi":"No",
+    "fechaActualizacion":"12-06-2023"
 }
 ]
