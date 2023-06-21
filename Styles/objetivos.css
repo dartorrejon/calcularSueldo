@@ -2,6 +2,7 @@
     display: flex;
     overflow: scroll;
     scroll-snap-type: x-mandatory;
+    margin-left:40px
     }
 
 .objetivo{
@@ -59,8 +60,8 @@ marquee{
 @media (min-width:800px){
     #objetivos{
         display: grid;
-        grid-template-columns: repeat(2,auto);
-        column-gap: .8em;
+        grid-template-columns: repeat(3,auto);
+        column-gap: 3em;
         overflow: initial;
     }
     .imgContainer{

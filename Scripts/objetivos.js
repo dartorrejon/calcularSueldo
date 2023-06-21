@@ -2,6 +2,10 @@ let objetivos = document.querySelector('#objetivos');
 fetch("/data/objetivos.json")
 .then(res => res.json())
 .then(json =>{
+  
+    json.sort((a,b) =>a.titulo.localeCompare(b.titulo))
+    
+    
     json.forEach(element => {
     let divCard = document.createElement('div')
     let titleCard = document.createElement('h5')
@@ -13,8 +17,9 @@ fetch("/data/objetivos.json")
     imgCard.className = 'fotoObjetivo'
     titleCard.className = 'objetivoTitulo'
     titleCard.innerText = element.titulo;
-    imgCard.src = element.src
-    imgCard.alt = element.alt
+    imgCard.src = element.src;
+    imgCard.alt = element.alt;
+    imgCard.setAttribute('loading', 'lazy');
     contImgCard.appendChild(imgCard)
     contentCard.innerText = `Direccion: ${element.direccion}
     Estufa: ${element.estufa}
