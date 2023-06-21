@@ -2,7 +2,7 @@
     display: flex;
     overflow: scroll;
     scroll-snap-type: x-mandatory;
-    margin-left:40px
+    margin-left:20px
     }
 
 .objetivo{
@@ -61,7 +61,7 @@ marquee{
     #objetivos{
         display: grid;
         grid-template-columns: repeat(3,auto);
-        column-gap: 3em;
+        column-gap: 1em;
         overflow: initial;
     }
     .imgContainer{
