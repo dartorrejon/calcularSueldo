@@ -11,6 +11,7 @@ fetch("/data/objetivos.json")
     divCard.className = 'objetivo container'
     contImgCard.className = 'imgContainer'
     imgCard.className = 'fotoObjetivo'
+    titleCard.className = 'objetivoTitulo'
     titleCard.innerText = element.titulo;
     imgCard.src = element.src
     imgCard.alt = element.alt

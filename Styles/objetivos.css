@@ -1,11 +1,22 @@
+#objetivos{
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x-mandatory;
+    }
+
 .objetivo{
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    scroll-snap-align: center;
+    width: 100%;
+    left:0;
     
-}
+  }
+  
 marquee{
     display: flex;
     align-items: center;
@@ -44,22 +55,17 @@ marquee{
 .filtro{
     display: none;
 }
-#buscador{
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 @media (min-width:800px){
     #objetivos{
         display: grid;
         grid-template-columns: repeat(2,auto);
         column-gap: .8em;
+        overflow: initial;
     }
     .imgContainer{
         width: 400px;
         height: 300px;
     }
+   
 }
