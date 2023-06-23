@@ -3,7 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.mercadopago{
+    
+    opacity: .5;
+    background-color: white;
+    height: 3rem; 
+    width: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    bottom: -70px;
+    right: 15px;
+    z-index: 10;
+    background-image: url("/IMG/mercado-pago-logo-vector.svg");
+    transition: all .3s ease-in-out;
+    
+}
 
+.mercadopago:hover, .menuToggle:focus {
+    opacity: 1;
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    transform: rotate(-360deg);
+}
+.mercadopago a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -185,5 +215,15 @@ header>nav {
     .copy > p:last-child{
         font-size: 1.3em;
     }
-    
+    .mercadopago{
+        position: fixed;
+        border-radius: 50%;
+        bottom: 0;
+        right: 15px;
+        opacity: .7;
+        height: 4em;
+        width: 4em;
+        animation-delay: 2s;
+               
+    }
 }
