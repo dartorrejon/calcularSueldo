@@ -16,7 +16,7 @@
     z-index: 10;
     background-image: url("/IMG/mercado-pago-logo-vector.svg");
     transition: all .3s ease-in-out;
-    
+        
 }
 
 .mercadopago:hover, .menuToggle:focus {
@@ -220,10 +220,8 @@ header>nav {
         border-radius: 50%;
         bottom: 0;
         right: 15px;
-        opacity: .7;
+        opacity: .5;
         height: 4em;
         width: 4em;
-        animation-delay: 2s;
-               
     }
 }

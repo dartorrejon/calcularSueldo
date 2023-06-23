@@ -22,3 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
     console.error('Error:', error);
   }
 });
+
+//Dandole un delay al link de mercado pago
+let mercado = document.querySelector('.mercadopago a');
+mercado.addEventListener('click', ev =>{
+  setTimeout( () => {
+    window.location.href = event.target.href;
+  },1000);
+})
