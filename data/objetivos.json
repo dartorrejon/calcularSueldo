@@ -69,5 +69,29 @@
     "baño":"Piso 13",
     "wifi":"No",
     "fechaActualizacion":"12-06-2023"
+},
+{
+    "titulo":"Arcos",
+    "src":"/IMG/Objetivos/arcos.png",
+    "alt":"Arcos",
+    "direccion":"Independencia 582",
+    "estufa":"Nose",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Piso 13",
+    "wifi":"Pendiente",
+    "fechaActualizacion":"23-06-2023"
+},
+{
+    "titulo":"Sol II y III",
+    "src":"/IMG/Objetivos/sol2y3.png",
+    "alt":"Sol II y III",
+    "direccion":"Estrada 144",
+    "estufa":"Nose",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Piso 13",
+    "wifi":"SI",
+    "fechaActualizacion":"23-06-2023"
 }
 ]
