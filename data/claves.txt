@@ -1,5 +1,5 @@
 Miró-fibertel Wifi 094-00431357182
-Plaza Intendencia-Consorcio-Fibertel170857
+Plaza Intendencia I y II-Consorcio-Fibertel170857
 San Gimignano-assandri-assandri123
 Torre del centro 2-planeta-almeja251
 Olympus 16-wifi_arnet_66gd_2.4-8xhce3re
@@ -8,7 +8,8 @@ Torre silver-TPLINK931C-39205247
 EMILIO 1-Rigal-0149593488
 Balcones de salguero-invitados-sba32019
 Sideral3-MRchurro-Masquechurro
-Sol II y III-iwoz_2G-iwoz2018
+Sol II-iwoz_2G-iwoz2018
+Sol III-sc_78e3-VGN2UWHJ2YMH
 Base-fibercorp-coop1956gm
 Jardines de Rondeau-celesterondeau-rondeau548
 Tomaso 6-fibertel wifi 899-01442234149
@@ -24,3 +25,5 @@ Ambrosio olmos 995-Fibertelwifi009-0044159125
 Olympus 12-Huawei 5G-48zpyN2P
 Redona-Fibertel WiFi506-0141850332
 Astral Suite-FiberCorp499 2.4Ghz-0103070796
+Messina II-WiFi_Arnet_u9st2.4-v6dfqa6ufg
+Zigurat II y III-Fibertel WiFi000 2.4Ghz-00435581874

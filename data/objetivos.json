@@ -7,7 +7,7 @@
     "ventilador":"NO",
     "estadoSilla":"MALO",
     "baño":"Piso 13",
-    "wifi":"Si",
+    "wifi":"SI",
     "fechaActualizacion":"30-05-2023"
 },
 {
@@ -19,7 +19,7 @@
     "ventilador":"NO",
     "estadoSilla":"Normal",
     "baño":"Planta Baja",
-    "wifi":"No",
+    "wifi":"NO",
     "fechaActualizacion":"30-05-2023"
 },
 {
@@ -31,7 +31,7 @@
     "ventilador":"NO",
     "estadoSilla":"Normal",
     "baño":"Planta Baja",
-    "wifi":"No",
+    "wifi":"NO",
     "fechaActualizacion":"30-05-2023"
 },
 {
@@ -43,7 +43,7 @@
     "ventilador":"NO",
     "estadoSilla":"Normal",
     "baño":"Planta Baja",
-    "wifi":"No",
+    "wifi":"NO",
     "fechaActualizacion":"30-05-2023"
 },
 {
@@ -55,7 +55,7 @@
     "ventilador":"SI",
     "estadoSilla":"Normal",
     "baño":"Planta Baja",
-    "wifi":"No",
+    "wifi":"NO",
     "fechaActualizacion":"05-06-2023"
 },
 {
@@ -67,7 +67,7 @@
     "ventilador":"NO",
     "estadoSilla":"Buena",
     "baño":"Piso 13",
-    "wifi":"No",
+    "wifi":"NO",
     "fechaActualizacion":"12-06-2023"
 },
 {
@@ -75,7 +75,7 @@
     "src":"/IMG/Objetivos/arcos.png",
     "alt":"Arcos",
     "direccion":"Independencia 582",
-    "estufa":"Nose",
+    "estufa":"NOSE",
     "ventilador":"NO",
     "estadoSilla":"Buena",
     "baño":"Piso 13",
@@ -87,7 +87,7 @@
     "src":"/IMG/Objetivos/sol2y3.png",
     "alt":"Sol II y III",
     "direccion":"Estrada 144",
-    "estufa":"Nose",
+    "estufa":"NOSE",
     "ventilador":"NO",
     "estadoSilla":"Buena",
     "baño":"Piso 13",
@@ -111,11 +111,11 @@
     "src":"/IMG/Objetivos/messinaII.png",
     "alt":"Messina II",
     "direccion":"Entre Rios 273",
-    "estufa":"NO",
+    "estufa":"SI",
     "ventilador":"NO",
     "estadoSilla":"Normal",
     "baño":"Piso 1",
-    "wifi":"NO",
+    "wifi":"SI",
     "fechaActualizacion":"29-06-2023"
 },
 {
@@ -141,5 +141,16 @@
     "baño":"NO",
     "wifi":"SI",
     "fechaActualizacion":"29-06-2023"
-}
+},
+{
+    "titulo":"Zigurat II y III",
+    "src":"/IMG/Objetivos/Zigurat2y3.png",
+    "alt":"Zigurat II y III",
+    "direccion":"Bv. San Juan 16",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Muy buena",
+    "baño":"Piso 12",
+    "wifi":"SI",
+    "fechaActualizacion":"29-06-2023"}
 ]
