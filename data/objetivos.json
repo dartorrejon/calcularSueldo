@@ -93,5 +93,53 @@
     "baño":"Piso 13",
     "wifi":"SI",
     "fechaActualizacion":"23-06-2023"
+},
+{
+    "titulo":"Santo Tomas I y II",
+    "src":"/IMG/Objetivos/santoTomas.png",
+    "alt":"Santo Tomas I y II",
+    "direccion":"Miguel del Corro 217",
+    "estufa":"NO",
+    "ventilador":"SI",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja(Torre I)",
+    "wifi":"NO",
+    "fechaActualizacion":"29-06-2023"
+},
+{
+    "titulo":"Messina II",
+    "src":"/IMG/Objetivos/messinaII.png",
+    "alt":"Messina II",
+    "direccion":"Entre Rios 273",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Piso 1",
+    "wifi":"NO",
+    "fechaActualizacion":"29-06-2023"
+},
+{
+    "titulo":"Astral Suite",
+    "src":"/IMG/Objetivos/astralSuite.png",
+    "alt":"Astral Suite",
+    "direccion":"Hipolito Yirigoyen 165",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"29-06-2023"
+},
+{
+    "titulo":"Karnak",
+    "src":"/IMG/Objetivos/karnak.png",
+    "alt":"Karnak",
+    "direccion":"Obispo Salgueiro 169",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"NO",
+    "wifi":"SI",
+    "fechaActualizacion":"29-06-2023"
 }
 ]
