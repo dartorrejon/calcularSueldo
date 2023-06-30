@@ -5,7 +5,7 @@ Torre del centro 2-planeta-almeja251
 Olympus 16-wifi_arnet_66gd_2.4-8xhce3re
 Torre del boulevard-GRANDIET-cafeverde
 Torre silver-TPLINK931C-39205247
-EMILIO 1-Rigal-0149593488
+Emilio I-Rigal-0149593488
 Balcones de salguero-invitados-sba32019
 Sideral3-MRchurro-Masquechurro
 Sol II-iwoz_2G-iwoz2018
@@ -29,3 +29,5 @@ Messina II-WiFi_Arnet_u9st2.4-v6dfqa6ufg
 Zigurat II y III-Fibertel WiFi000 2.4Ghz-00435581874
 Aranjuez I -WiFi537-0143257007
 Aranjuez II-Cibo 2.4G-cibo0427
+Emilio I-wifi_Arnet_pm58-3cu6h3g7e
+Gran Depsal II-CASIH 2.4-Arturom389

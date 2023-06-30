@@ -176,5 +176,29 @@
     "baño":"Planta Baja",
     "wifi":"SI",
     "fechaActualizacion":"29-06-2023"
+},
+{
+    "titulo":"Emilio I",
+    "src":"/IMG/Objetivos/EmilioI.png",
+    "alt":"Emilio I",
+    "direccion":"Independencia 222",
+    "estufa":"SI",
+    "ventilador":"SI",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"30-06-2023"
+},
+{
+    "titulo":"Gran Depsal II",
+    "src":"/IMG/Objetivos/GranDepsal2.png",
+    "alt":"Gran Depsal II",
+    "direccion":"Arturo M Bas 389",
+    "estufa":"SI",
+    "ventilador":"SI",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"30-06-2023"
 }
 ]
