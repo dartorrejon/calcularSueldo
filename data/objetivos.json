@@ -23,9 +23,9 @@
     "fechaActualizacion":"30-05-2023"
 },
 {
-    "titulo":"Aranjuez 3",
-    "src":"/IMG/Objetivos/Aranjuez3.png",
-    "alt":"Aranjuez 3",
+    "titulo":"Aranjuez III",
+    "src":"/IMG/Objetivos/AranjuezIII.png",
+    "alt":"Aranjuez III",
     "direccion":"Obispo Salgueiro 561",
     "estufa":"SI",
     "ventilador":"NO",
@@ -152,5 +152,29 @@
     "estadoSilla":"Muy buena",
     "baño":"Piso 12",
     "wifi":"SI",
-    "fechaActualizacion":"29-06-2023"}
+    "fechaActualizacion":"29-06-2023"},
+{
+    "titulo":"Aranjuez I",
+    "src":"/IMG/Objetivos/AranjuezI.png",
+    "alt":"Aranjuez I",
+    "direccion":"Obispo Salgueiro 577",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"29-06-2023"
+},
+{
+    "titulo":"Aranjuez II",
+    "src":"/IMG/Objetivos/AranjuezII.png",
+    "alt":"Aranjuez II",
+    "direccion":"San Lorenzo 427",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"29-06-2023"
+}
 ]
