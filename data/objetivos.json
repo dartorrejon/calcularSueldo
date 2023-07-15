@@ -200,5 +200,101 @@
     "baño":"Planta Baja",
     "wifi":"SI",
     "fechaActualizacion":"30-06-2023"
+},
+{
+    "titulo":"Ignea IX",
+    "src":"/IMG/Objetivos/igneaIX.png",
+    "alt":"Ignea IX",
+    "direccion":"Figueroa Alcorta 56",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Planta Baja",
+    "wifi":"NO",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Maria Elena II",
+    "src":"/IMG/Objetivos/mariaElenaII.png",
+    "alt":"Maria Elena II",
+    "direccion":"San Luis 123",
+    "estufa":"NO",
+    "ventilador":"SI",
+    "estadoSilla":"Buena",
+    "baño":"Planta Baja",
+    "wifi":"NO",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Veronica I",
+    "src":"/IMG/Objetivos/veronicaI.png",
+    "alt":"Veronica I",
+    "direccion":"Ambrosio Olmos 670",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Planta Baja",
+    "wifi":"NO",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Gran Depsal I",
+    "src":"/IMG/Objetivos/granDepsalI.png",
+    "alt":"Gran Depsal I",
+    "direccion":"Crisol 240",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Muy Buena",
+    "baño":"No se",
+    "wifi":"NO",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Sideral III",
+    "src":"/IMG/Objetivos/sideralIII.png",
+    "alt":"Sideral III",
+    "direccion":"Ituzaingo 557",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Mala",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Los Torreones",
+    "src":"/IMG/Objetivos/losTorreones.png",
+    "alt":"Los Torreones",
+    "direccion":"Buenos Aires 412",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja",
+    "wifi":"NO",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Santangelo II",
+    "src":"/IMG/Objetivos/santangeloII.png",
+    "alt":"Santangelo II",
+    "direccion":"Ituzaingo 628",
+    "estufa":"NO",
+    "ventilador":"NO",
+    "estadoSilla":"Muy Buena",
+    "baño":"No se",
+    "wifi":"NO",
+    "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Torres del Boulevard",
+    "src":"/IMG/Objetivos/torresDelBoulevard.png",
+    "alt":"Torres del Boulevard",
+    "direccion":"Obispo Trejo 417",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Planta Baja",
+    "wifi":"SI",
+    "fechaActualizacion":"08-07-2023"
 }
 ]
