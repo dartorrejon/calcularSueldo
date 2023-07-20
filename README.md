@@ -1,6 +1,6 @@
 # Sueldo App
 
-Este es un proyecto realizado unicamente con HTML, CSS y Vanilla JavaScript, lo hice para utilizarlo en mi trabajo actual(guardia de seguridad) y poner en practica los conocimientos aprendidos a los largos de los cursos que hice.
+Este es un proyecto realizado unicamente con HTML, CSS y Vanilla JavaScript, lo hice para utilizarlo en mi trabajo actual(guardia de seguridad) y poner en practica los conocimientos aprendidos a los largos de los cursos que hice. Vale aclarar que si bien se quiso hacer la pagina responsive esta mas pensada como una App para consultar desde celular.
 
 ## Construido con 🛠️
 
