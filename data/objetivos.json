@@ -296,5 +296,17 @@
     "baño":"Planta Baja",
     "wifi":"SI",
     "fechaActualizacion":"08-07-2023"
+},
+{
+    "titulo":"Florida 21",
+    "src":"/IMG/Objetivos/FloridaXXI.png",
+    "alt":"Florida 21",
+    "direccion":"Independencia 880",
+    "estufa":"SI",
+    "ventilador":"NO",
+    "estadoSilla":"Buena",
+    "baño":"Piso 10",
+    "wifi":"SI",
+    "fechaActualizacion":"25-07-2023"
 }
 ]
