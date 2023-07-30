@@ -3,7 +3,7 @@
     "src":"/IMG/Objetivos/PlazaIntendencia1y2.png",
     "alt":"Plaza Intendencia",
     "direccion":"Duarte Quiros 433",
-    "estufa":"NO",
+    "estufa":"SI",
     "ventilador":"NO",
     "estadoSilla":"MALO",
     "baño":"Piso 13",
@@ -79,7 +79,7 @@
     "ventilador":"NO",
     "estadoSilla":"Buena",
     "baño":"Piso 13",
-    "wifi":"Pendiente",
+    "wifi":"SI",
     "fechaActualizacion":"23-06-2023"
 },
 {
