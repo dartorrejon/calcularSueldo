@@ -317,7 +317,7 @@
     "estufa":"SI",
     "ventilador":"SI",
     "estadoSilla":"Buena",
-    "baño":"FALTA", 
+    "baño":"Piso 11", 
     "wifi":"SI",
     "fechaActualizacion":"25-08-2023"
 },
@@ -326,11 +326,11 @@
     "src":"/IMG/Objetivos/EdificioBolivar.png",
     "alt":"Edificio Bolivar",
     "direccion":"Simon Bolivar 376",
-    "estufa":"FALTA",
-    "ventilador":"FALTA",
+    "estufa":"SI",
+    "ventilador":"SI",
     "estadoSilla":"Normal",
-    "baño":"FALTA", 
-    "wifi":"FALTA",
+    "baño":"Planta Baja", 
+    "wifi":"NO",
     "fechaActualizacion":"25-08-2023"
 },
 {
@@ -338,11 +338,11 @@
     "src":"/IMG/Objetivos/EdificioPanama.png",
     "alt":"Edificio Panama",
     "direccion":"Obispo Trejo 1180",
-    "estufa":"FALTA",
-    "ventilador":"FALTA",
+    "estufa":"SI",
+    "ventilador":"SI",
     "estadoSilla":"Normal",
-    "baño":"Planta Baja", 
-    "wifi":"FALTA",
+    "baño":"Sub-Suelo", 
+    "wifi":"NO",
     "fechaActualizacion":"25-08-2023"
 }
 ]
