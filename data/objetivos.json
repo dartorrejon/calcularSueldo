@@ -99,12 +99,12 @@
     "src":"/IMG/Objetivos/santoTomas.png",
     "alt":"Santo Tomas I y II",
     "direccion":"Miguel del Corro 217",
-    "estufa":"NO",
+    "estufa":"SI",
     "ventilador":"SI",
     "estadoSilla":"Normal",
     "baño":"Planta Baja(Torre I)",
     "wifi":"NO",
-    "fechaActualizacion":"29-06-2023"
+    "fechaActualizacion":"25-08-2023"
 },
 {
     "titulo":"Messina II",
@@ -308,5 +308,41 @@
     "baño":"Piso 10",
     "wifi":"SI",
     "fechaActualizacion":"25-07-2023"
+},
+{
+    "titulo":"Gran Depsal III",
+    "src":"/IMG/Objetivos/GranDepsal3.png",
+    "alt":"Gran Depsal III",
+    "direccion":"Buenos Aires 891",
+    "estufa":"SI",
+    "ventilador":"SI",
+    "estadoSilla":"Buena",
+    "baño":"FALTA", 
+    "wifi":"SI",
+    "fechaActualizacion":"25-08-2023"
+},
+{
+    "titulo":"Edificio Bolivar",
+    "src":"/IMG/Objetivos/EdificioBolivar.png",
+    "alt":"Edificio Bolivar",
+    "direccion":"Simon Bolivar 376",
+    "estufa":"FALTA",
+    "ventilador":"FALTA",
+    "estadoSilla":"Normal",
+    "baño":"FALTA", 
+    "wifi":"FALTA",
+    "fechaActualizacion":"25-08-2023"
+},
+{
+    "titulo":"Edificio Panama",
+    "src":"/IMG/Objetivos/EdificioPanama.png",
+    "alt":"Edificio Panama",
+    "direccion":"Obispo Trejo 1180",
+    "estufa":"FALTA",
+    "ventilador":"FALTA",
+    "estadoSilla":"Normal",
+    "baño":"Planta Baja", 
+    "wifi":"FALTA",
+    "fechaActualizacion":"25-08-2023"
 }
 ]
