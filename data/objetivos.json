@@ -344,5 +344,17 @@
     "baño":"Sub-Suelo", 
     "wifi":"NO",
     "fechaActualizacion":"25-08-2023"
+},
+{
+    "titulo":"Olimpus XII",
+    "src":"/IMG/Objetivos/OlimpusXII.png",
+    "alt":"Olimpus XII",
+    "direccion":"Marcelo T. de Alvear 446",
+    "estufa":"SI",
+    "ventilador":"SI",
+    "estadoSilla":"Buena",
+    "baño":"FALTA", 
+    "wifi":"SI",
+    "fechaActualizacion":"28-08-2023"
 }
 ]
